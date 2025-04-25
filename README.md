@@ -61,6 +61,20 @@ properly set up.
 | `Alt + Up`        | Normal mode | Move to upper window            |
 | `Ctrl + n`        | Normal mode | Toggle line numbers and relative numbers |
 
+### About `<leader>`
+
+The `<leader>` key is a customizable prefix key used in Neovim mappings.  
+By default, it is set to the backslash (`\`) key.
+
+So `<leader>e` means pressing:
+
+```
+\  followed by  e
+```
+
+You can customize the leader key by setting it in your `init.lua`.  
+In this configuration, the default (`\`) is used.
+
 
 ## Plugins
 
