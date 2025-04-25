@@ -53,8 +53,8 @@ properly set up.
 | `Ctrl + j`        | Normal mode | Toggle Neotree file explorer    |
 | `{`               | Normal mode | Go to previous tab              |
 | `}`               | Normal mode | Go to next tab                  |
-| `Alt + h`         | Normal mode | Go to previous tab              |
-| `Alt + l`         | Normal mode | Go to next tab                  |
+| `Shift + left`    | Normal mode | Go to previous tab              |
+| `Shift + right`   | Normal mode | Go to next tab                  |
 | `Alt + Left`      | Normal mode | Move to left window             |
 | `Alt + Right`     | Normal mode | Move to right window            |
 | `Alt + Down`      | Normal mode | Move to lower window            |

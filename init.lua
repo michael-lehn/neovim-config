@@ -22,9 +22,9 @@ vim.api.nvim_set_keymap('n', '{', 'gT',
 	{ noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '}', 'gt',
 	{ noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<A-h>', 'gT',
+vim.api.nvim_set_keymap('n', '<S-Left>', 'gT',
 	{ noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<A-l>', 'gt',
+vim.api.nvim_set_keymap('n', '<S-Right>', 'gt',
 	{ noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<A-Left>', '<C-W>h',
 	{ noremap = true, silent = true })
