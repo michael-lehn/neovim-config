@@ -45,6 +45,23 @@ properly set up.
 - **lua/** – Settings, key mappings, plugin setup
 - **lazy-lock.json** – Locks plugin versions for reproducible setups
 
+## Keybindings
+
+| Shortcut         | Mode        | Action                          |
+|:-----------------|:------------|:--------------------------------|
+| `<leader>e`       | Normal mode | Toggle Neotree file explorer    |
+| `Ctrl + j`        | Normal mode | Toggle Neotree file explorer    |
+| `{`               | Normal mode | Go to previous tab              |
+| `}`               | Normal mode | Go to next tab                  |
+| `Alt + h`         | Normal mode | Go to previous tab              |
+| `Alt + l`         | Normal mode | Go to next tab                  |
+| `Alt + Left`      | Normal mode | Move to left window             |
+| `Alt + Right`     | Normal mode | Move to right window            |
+| `Alt + Down`      | Normal mode | Move to lower window            |
+| `Alt + Up`        | Normal mode | Move to upper window            |
+| `Ctrl + n`        | Normal mode | Toggle line numbers and relative numbers |
+
+
 ## Plugins
 
 This configuration uses [lazy.nvim](https://github.com/folke/lazy.nvim) to
