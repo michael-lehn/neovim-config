@@ -48,11 +48,12 @@ syntax match keyword /\<union\>/ skipwhite
 syntax match keyword /\<enum\>/ skipwhite
 syntax match keyword /\<goto\>/ skipwhite
 
-syntax match literal /\<true\>/ skipwhite
-syntax match literal /\<false\>/ skipwhite
+syntax match abcLiteral /\<true\>/ skipwhite
+syntax match abcLiteral /\<false\>/ skipwhite
 
 syntax match type /\<const\>/ skipwhite
 syntax match type /\<readonly\>/ skipwhite
+syntax match type /\<volatile\>/ skipwhite
 syntax match type /\<void\>/ skipwhite
 syntax match type /\<bool\>/ skipwhite
 syntax match type /\<float\>/ skipwhite
@@ -84,29 +85,28 @@ syn region cPreCondit   start="^\s*\zs\%(%:\|#\)\s*\%(if\|ifdef\|ifndef\|elif\)\
 syn match  cPreCondit display "^\s*\zs\%(%:\|#\)\s*\%(else\|endif\)\>"
 
 
-syntax match literal /[+-]*[1-9][0-9]*/ skipwhite
-syntax match literal /nullptr/ skipwhite
-syntax match literal /[0-7][0-7]*/ skipwhite
-syntax match literal /0x[0-9a-fA-F][0-9a-fA-F]*/ skipwhite
-syntax region literal start=/"/ skip=/\\"/ end=/"/ skipwhite
-syntax match literal /'.'/ skipwhite
-syntax match literal /'\\[^\\]'/ skipwhite
+syntax match abcLiteral /[+-]*[1-9][0-9]*/ skipwhite
+syntax match abcLiteral /nullptr/ skipwhite
+syntax match abcLiteral /[0-7][0-7]*/ skipwhite
+syntax match abcLiteral /0x[0-9a-fA-F][0-9a-fA-F]*/ skipwhite
+syntax region abcLiteral start=/"/ skip=/\\"/ end=/"/ skipwhite
+syntax match abcLiteral /'.'/ skipwhite
+syntax match abcLiteral /'\\[^\\]'/ skipwhite
 "syntax match ident /[a-zA-Z][a-zA-Z0-9_]*/ skipwhite
 
 syntax region comment start="//" end="$" skipwhite
 syntax region comment start="/\*" end="\*/" skipwhite
 
 
-highlight link keyword Statement
-highlight link type Type
-highlight link literal Number
-highlight link comment Comment
+highlight def link keyword Statement
+highlight def link type Type
+highlight def link abcLiteral Number
+highlight def link comment Comment
 
 hi def link cDefine             Macro
 hi def link cIncluded           cString
 hi def link cInclude            Include
-hi def link cString             String
 hi def link cPreCondit          PreCondit
-
+hi def link cString		String
 
 let b:current_syntax = "abc"
